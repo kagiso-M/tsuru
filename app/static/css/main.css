@@ -1,0 +1,42 @@
+.masthead .se-masthead {
+    /* box-shadow: horizontal vertical blur rgba(0, 0, 0, 1) */
+    box-shadow: inset 0 18px 10px rgba(0, 0, 0, 0.1),
+                inset 0 -18px 10px rgba(0, 0, 0, 0.1);
+}
+
+div .es-toc,
+.es-tutorial-title,
+.es-tutorial-subtitle,
+.es-tutorial-intro {
+    color: darkcyan;
+}
+
+div .es-toc ul {
+    list-style-type: none;
+    margin-right: 0;
+}
+
+div .es-toc a {
+    text-decoration: none;
+}
+div .es-toc a:link,
+div .es-toc a:visited,
+div .es-toc a:hover,
+div .es-toc a:active {
+    color: inherit;
+}
+
+.es-toc-title-text,
+.es-tutorial-title {
+    font-size: 20px;
+}
+
+.es-toc-point,
+.es-tutorial-subtitle {
+    font-size: 16px;
+}
+
+.es-tutorial-intro {
+    font-size: 26;
+    text-decoration: underline;
+}

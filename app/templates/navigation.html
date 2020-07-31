@@ -1,0 +1,37 @@
+<!-- Navigation Bar -->
+<nav class="border-bottom mb-5 shadow-sm">
+    <div class="nav pt-2 pb-2 justify-content-center bg-info text-white">
+        <span>This application is for demonstration purposes!</span>
+    </div>
+    <div class="navbar navbar-light bg-light">
+        <div class="container">
+            <div class="col-6">
+                <a class="navbar-brand" href="#">
+                    <img src="{{ url_for('static', filename='images/ticon.svg') }}" width="30" height="30" class="d-inline-block align-top">
+                    Kage Tsuru
+                </a>
+                <span class="navbar-text front-weight-light">The best tool to manage your blog</span>
+            </div>
+            <div class="col-4">
+                <span class="navbar-text d-inline-block">project source code:</span>
+                <a href="#" class="btn btn-link btn-outline-secondary">github repo</a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-expand-lg navbar-light bg-light border-top border-white">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('home') }}">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('upload') }}">Upload</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- endNav -->

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+<h2>This is a test</h2>
+<p>Code blocks must be indented by 4 whitespaces.
+Python-Markdown has a auto-guess function which works pretty well:</p>
+<pre><code>print("Hello, world")
+# some comment
+for letter in "this is a test":
+    print(letter)
+</code></pre>
+<p>If cases where Python-Markdown has problems figuring out which programming
+ language we use, we can also add the language-tag explicitly. One way to do
+  this would be:</p>
+<pre><code>:::python
+print("Hello World")
+</code></pre>
+<p>or we can highlight certain lines to draw the reader's attention:</p>
+<pre><code>:::python hl_lines="1 5"
+print("highlight me!")
+# but not me
+for letter in "this is a test":
+    print(letter)
+# I want to be highlighted too!
+</code></pre>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+Flask==1.1.2
+python-dotenv==0.14.0
+Markdown==3.2.2
+beautifulsoup4==4.9.1
+html5lib==1.1

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if posts %}
+<p>Landing page</p>
+{% else %}
+{% include "flashmessages.html" %}
+{% include "uploadbuttons.html" %}
+{% endif %}
+{% endblock %}
